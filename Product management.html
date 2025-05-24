@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)file:///D:/My%20work/PROGRAMMER/projet1/projet1.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projet1.css">
+    <title>Product management</title>
+</head>
+<body>
+    <div class="projet">
+        <header> 
+            
+            <h1>Product management</h1>
+            
+        </header>
+        <div class="input">
+            <input placeholder="title" type="text" id="title">
+            <input placeholder="#ref" type="text" id="ref">
+            <input placeholder="color" type="text" id="color">
+            <input placeholder="category" type="text" id="category">
+            <input onkeyup="calculetotal()" type="number" placeholder="quantite" id="quantite">
+            <input onkeyup="calculetotal()" placeholder="price" type="number" id="price"><br>
+            <small id="total">00.00</small>
+            <button id="creat">creat</button>
+        </div>
+        <div class="search">
+            <input type="text" id="search" placeholder="search" class="searchinput">
+            <button onclick="romove()" class="searchromove" id="romove">romove</button>
+            <div class="btnsearch">
+                <button onclick="searchcat()" id="searchcategory">search by category</button>
+                <button onclick="searchtit()" id="searchtitle">search by title</button>
+            </div>
+            <table>
+                <tbody><tr>
+                    
+                    <th>title</th>
+                    <th>ref</th>
+                    <th>color</th>
+                    <th>category</th>
+                    <th>quantity</th>
+                    <th> unit price</th>
+                    <th> total</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+            </tbody><tbody id="tbody">
+            <tr>
+            
+            <th>poiuy</th>
+            <th>rtr</th>
+            <th>grgr</th>
+            <th>gttt</th>
+            <th>2</th>
+            <th>2555</th>
+            <th>5110</th>
+            <th><button onclick="update(0)" id="update">update</button></th>
+            <th><button onclick="deletedata(0)" id="delete">delete</button></th>
+        </tr></tbody>
+            </table>
+           
+        </div>
+        <div class="result">
+            <h2>result total</h2>
+             <h4>total price<span id="totlprice">5110</span></h4>
+             
+            
+           
+        </div>
+        <p>Our website provides product management service and total price calculation in a convenient and efficient way. Users can take advantage of a variety of features to manage different products. They can add new products, modify existing product data, and delete unwanted products. In addition, users are able to calculate the total price of a group of products according to the quantities and prices specified for each product. This allows them to determine the total cost of purchases or to determine the cost of products stored in the database. Our website provides a user-friendly and smooth interface to users, making it easy for them to manage products and calculate total prices quickly and accurately</p>
+    </div>
+    
+
+    <script src="projet1.js"> </script>
+    
+
+</body></html>
